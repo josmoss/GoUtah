@@ -8,7 +8,9 @@
 
 import Foundation
 
-class destImage {
+let kDestImageName: String = "destinationImagename"
+
+class destImage: NSObject, NSCoding {
     
     var imageName: String = ""
     
@@ -18,5 +20,20 @@ class destImage {
         
         
     }
+    
+    required init?(coder aDecoder: NSCoder) {
+        
+        self.imageName = aDecoder.decodeObjectForKey(kDestDescription) as! String
+        
+        super.init()
+    }
+    
+    func encodeWithCoder(aCoder: NSCoder) {
+        
+        aCoder.encodeObject(self.imageName, forKey: kDestDescription)
+  
+        
+    }
+
     
 }

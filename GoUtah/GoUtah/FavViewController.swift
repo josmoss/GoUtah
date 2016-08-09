@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FavViewController.swift
 //  GoUtah
 //
 //  Created by Joe Moss on 8/5/16.
@@ -16,19 +16,45 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     @IBOutlet weak var tableView: UITableView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        DataStore.sharedInstance.saveDefaults()
+        
+       // print(DataStore.sharedInstance.favoriteDestinations.count)
+        
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return DataStore.sharedInstance.favoriteNumberOfDestinations()
+        return DataStore.sharedInstance.favoriteDestinations.count 
+    }
+    
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        var destinationToRemove = DataStore.sharedInstance.favoriteDestinations[indexPath.row]
+        
+        
+        
+        // DataStore.sharedInstance.removeDestination()
+        
+        tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! FavTableViewCell
         
-        let destination = DataStore.sharedInstance.favoriteAtIndex(indexPath.row)
+        let destination = DataStore.sharedInstance.favoriteDestinations[indexPath.row]
         
-         cell.featureImageView.image = destination?.image
-        cell.nameLabel.text = destination?.name
+        cell.featureImageView.image = destination.image
+        
+        cell.nameLabel.text = destination.name
         
         return cell
     }
@@ -56,5 +82,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         }
         
     }
+    
+
     
 }

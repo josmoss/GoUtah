@@ -75,7 +75,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             annotationView.canShowCallout = true
             
             let imageView = UIImageView(frame: CGRectMake(0, 0, 44, 44))
-            imageView.image = UIImage(named: "mapPin")
+            imageView.image = UIImage(named: "hiker")
             
             annotationView.image = imageView.image
             
