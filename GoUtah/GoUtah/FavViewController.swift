@@ -19,15 +19,13 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        DataStore.sharedInstance.saveDefaults()
+        // DataStore.sharedInstance.saveDefaults()
         
        // print(DataStore.sharedInstance.favoriteDestinations.count)
         
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return DataStore.sharedInstance.favoriteDestinations.count 
     }
     
@@ -37,13 +35,18 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         
-        var destinationToRemove = DataStore.sharedInstance.favoriteDestinations[indexPath.row]
-        
-        
-        
-        // DataStore.sharedInstance.removeDestination()
-        
-        tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            
+            print("delete tapped")
+            DataStore.sharedInstance.favoriteDestinations.removeAtIndex(indexPath.row)
+            
+            self.tableView.reloadData()
+//            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+//            
+//        } else if editingStyle == .Insert {
+            
+        }
+
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -82,7 +85,5 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         }
         
     }
-    
-
     
 }

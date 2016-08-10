@@ -16,14 +16,9 @@ class CardStackViewController: UIViewController, CardStackDelegate {
         super.viewDidLoad()
         
         self.cardStackView.delegate = self
-        
-        
+
         if DataStore.sharedInstance.favoriteDestinations.count >= 0 {
-            
-            DataStore.sharedInstance.loadDefaults()
-            
             print("Number of saved destinations \(DataStore.sharedInstance.favoriteDestinations.count)")
-         
         }
         
     }
@@ -33,8 +28,7 @@ class CardStackViewController: UIViewController, CardStackDelegate {
         
         DataStore.sharedInstance.addFavoriteDestination(dest)
     //Append interested destinations into favorite destitions array 
-        DataStore.sharedInstance.favoriteDestinations.append(dest)
-
+        //DataStore.sharedInstance.favoriteDestinations.append(dest)
         
     }
     

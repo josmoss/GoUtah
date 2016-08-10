@@ -383,6 +383,7 @@
 				D8EC693A1D54FEF40031E72E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
