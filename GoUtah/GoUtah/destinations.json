@@ -1,7 +1,7 @@
 {
 	"destinations": [{
-		"name": "Zion National Park",
-		"description": "Zion National Park is located in the Southwestern United States, near Springdale, Utah. A prominent feature of the park is Zion Canyon, which is 15 miles long and up to half a mile deep, cut through the reddish and tan-colored Navajo Sandstone by the North Fork of the Virgin River. Located at the junction of the Colorado Plateau, Great Basin, and Mojave Desert regions, the park's unique geography and variety of life zones allow for unusual plant and animal diversity. Numerous plant species as well as 289 species of birds, 75 mammals (including 19 species of bat), and 32 reptiles inhabit the park's four life zones: desert, riparian, woodland, and coniferous forest. Zion National Park includes mountains, canyons, buttes, mesas, monoliths, rivers, slot canyons, and natural arches.",
+		"name": "Zion",
+		"description": "Zion National Park is located in the Southwestern United States, near Springdale, Utah. A prominent feature of the park is Zion Canyon, which is 15 miles long and up to half a mile deep, cut through the reddish and tan-colored Navajo Sandstone by the North Fork of the Virgin River. Located at the junction of the Colorado Plateau, Great Basin, and Mojave Desert regions, the park's unique geography and variety of life zones allow for unusual plant and animal diversity. Zion National Park includes mountains, canyons, buttes, mesas, monoliths, rivers, slot canyons, and natural arches.",
 		"images": [{
 			"imageName": "zion_1"
 		}, {
@@ -40,8 +40,8 @@
 		"longitude": -113.026300,
 		"charge": "$25.00 per car per week."
 	},{
-		"name": "Arches National Park",
-		"description": "Arches National Park is a US National Park in eastern Utah. The park is located on the Colorado River 4 miles (6 km) north of Moab, Utah. It is known for containing over 2,000 natural sandstone arches, including the world-famous Delicate Arch, in addition to a variety of unique geological resources and formations. The park is located just outside Moab, Utah, and is 76, 679 acres(119.811 sq mi; 31, 031 ha; 310.31 km2) in area.[3] Its highest elevation is 5,653 feet(1, 723 m) at Elephant Butte, and its lowest elevation is 4,085 feet(1, 245 m) at the visitor center. Forty - three arches are known to have collapsed since 1977. The park receives 10 inches(250 mm) of rain a year on average.",
+		"name": "Arches",
+		"description": "Arches National Park is a US National Park in eastern Utah. The park is located on the Colorado River 4 miles north of Moab, Utah. It is known for containing over 2,000 natural sandstone arches, including the world-famous Delicate Arch, in addition to a variety of unique geological resources and formations. The park receives 10 inches(250 mm) of rain a year on average.",
 		"images": [{
 			"imageName": "arches_1"
 		}, {
@@ -80,8 +80,8 @@
 		"longitude": -109.592514,
 		"charge": "$10.00 per car per week."
 	},{
-		"name": "Canyonlands National Park",
-		"description": "Canyonlands National Park is a U.S. National Park located in southeastern Utah near the town of Moab. It preserves a colorful landscape eroded into countless canyons, mesas, and buttes by the Colorado River, the Green River, and their respective tributaries. Legislation creating the park was signed into law by President Lyndon Johnson on September 12, 1964.The park is divided into four districts: the Island in the Sky, the Needles, the Maze, and the combined rivers—the Green and Colorado—which carved two large canyons into the Colorado Plateau. While these areas share a primitive desert atmosphere, each retains its own character.[4] Author Edward Abbey, a frequent visitor, described the Canyonlands as 'the most weird, wonderful, magical place on earth—there is nothing else like it anywhere'.",
+		"name": "Canyonlands",
+		"description": "Canyonlands National Park is a U.S. National Park located in southeastern Utah near the town of Moab. It preserves a colorful landscape eroded into countless canyons, mesas, and buttes by the Colorado River, the Green River, and their respective tributaries. The park is divided into four districts: the Island in the Sky, the Needles, the Maze, and the combined rivers—the Green and Colorado—which carved two large canyons into the Colorado Plateau. While these areas share a primitive desert atmosphere, each retains its own character.",
 		"images": [{
 			"imageName": "canyon_1"
 		}, {
@@ -120,8 +120,8 @@
 		"longitude": -109.878259,
 		"charge": "$10.00 fee per non-commercial vehicle for 7 days. $5 fee per individual motorcyclist, bicyclist, or walk-in hiker for 7 days."
 	},{
-		"name": "Bryce Canyon National Park",
-		"description": "Bryce Canyon National Park is a National Park located in southwestern Utah in the United States. The major feature of the park is Bryce Canyon, which despite its name, is not a canyon, but a collection of giant natural amphitheaters along the eastern side of the Paunsaugunt Plateau. Bryce is distinctive due to geological structures called hoodoos, formed by frost weathering and stream erosion of the river and lake bed sedimentary rocks. The red, orange, and white colors of the rocks provide spectacular views for park visitors. Bryce sits at a much higher elevation than nearby Zion National Park. The rim at Bryce varies from 8,000 to 9,000 feet (2,400 to 2,700 m). The Bryce Canyon area was settled by Mormon pioneers in the 1850s and was named after Ebenezer Bryce, who homesteaded in the area in 1874.[3] The area around Bryce Canyon became a National Monument in 1923 and was designated as a National Park in 1928. The park covers 35,835 acres (55.992 sq mi; 14,502 ha; 145.02 km2)[1] and receives relatively few visitors compared to Zion National Park and the Grand Canyon, largely due to its remote location.",
+		"name": "Bryce Canyon",
+		"description": "Bryce Canyon National Park is a National Park located in southwestern Utah in the United States. The major feature of the park is Bryce Canyon, which despite its name, is not a canyon, but a collection of giant natural amphitheaters along the eastern side of the Paunsaugunt Plateau. Bryce is distinctive due to geological structures called hoodoos, formed by frost weathering and stream erosion of the river and lake bed sedimentary rocks. The red, orange, and white colors of the rocks provide spectacular views for park visitors.",
 		"images": [{
 			"imageName": "bryce_1"
 		}, {
@@ -154,14 +154,14 @@
 			"imageName": "bryce_15"
 		}],
 		"contactInformation": "Park Website",
-		"specialInformation": "",
+		"specialInformation": "Summer temperatures in Bryce Canyon can exceed 100F. Be sure to carry water when hiking, at least 1 gallon per day per person in the summertime.",
 		"category": "Park",
 		"latitude": 37.593038,
 		"longitude": -112.187090,
 		"charge": "$25.00 per car per week."
 	},{
-		"name": "Capitol Reef National Park",
-		"description": "Capitol Reef National Park is a United States National Park, in south-central Utah. The park is approximately 60 miles (97 km) long on its north–south axis but an average of just 6 miles (9.7 km) wide. The park was established in 1971 to preserve 241,904 acres (377.98 sq mi; 97,895.08 ha; 978.95 km2) of desert landscape and is open all year with May through September being the highest visitation months. Located partially in Wayne County, Utah, the area was originally named 'Wayne Wonderland' in the 1920s by local boosters Ephraim P. Pectol and Joseph S. Hickman. Capitol Reef National Park was initially designated a National Monument on August 2, 1937 by President Franklin D. Roosevelt in order to protect the area's colorful canyons, ridges, buttes, and monoliths; however, it was not until 1950 that the area officially opened to the public.[3] Easy road access only came in 1962 with the construction of State Route 24 through the Fremont River Canyon.",
+		"name": "Capitol Reef",
+		"description": "Capitol Reef National Park is a United States National Park, in south-central Utah. Capitol Reef National Park was initially designated a National Monument on August 2, 1937 by President Franklin D. Roosevelt in order to protect the area's colorful canyons, ridges, buttes, and monoliths; however, it was not until 1950 that the area officially opened to the public. Easy road access only came in 1962 with the construction of State Route 24 through the Fremont River Canyon.",
 		"images": [{
 			"imageName": "capitol_1"
 		}, {
@@ -200,8 +200,8 @@
 		"longitude": -111.261504,
 		"charge": "$5.00 to $10.00 per vehicle per week (Scenic Drive Only). $3.00 to $7.00 per person rate."
 	},{
-		"name": "Glen Canyon NRA & Lake Powell",
-		"description": "Lake Powell is a reservoir on the Colorado River, straddling the border between Utah and Arizona (most of it, along with Rainbow Bridge, is in Utah). It is a major vacation spot that around 2 million people visit every year. It is the second largest man-made reservoir by maximum water capacity in the United States behind Lake Mead, storing 24,322,000 acre feet (3.0001×1010 m3) of water when full. However, due to high water withdrawals for human and agricultural consumption, and because of subsequent droughts in the area, Lake Powell is currently larger than Mead in terms of volume of water currently held, depth and surface area. Lake Powell was created by the flooding of Glen Canyon by the Glen Canyon Dam, which also led to the creation of Glen Canyon National Recreation Area, a popular summer destination. The reservoir is named for explorer John Wesley Powell, a one-armed American Civil War veteran who explored the river via three wooden boats in 1869. In 1972, Glen Canyon National Recreation Area was established. It is public land managed by the National Park Service, and available to the public for recreational purposes. It lies in parts of Garfield, Kane, and San Juan counties in southern Utah, and Coconino County in northern Arizona. The northern limits of the lake extend at least as far as the Hite Crossing Bridge. A map centered at the confluence of the Escalante River 37°17′22″N 110°52′20″W with the Colorado River gives a good view of the extent of the lake.",
+		"name": "Glen Canyon/Lake Powell",
+		"description": "Lake Powell is a reservoir on the Colorado River, straddling the border between Utah and Arizona (most of it, along with Rainbow Bridge, is in Utah). Lake Powell was created by the flooding of Glen Canyon by the Glen Canyon Dam, which also led to the creation of Glen Canyon National Recreation Area, a popular summer destination. It is public land managed by the National Park Service, and available to the public for recreational purposes.",
 		"images": [{
 			"imageName": "glen_1"
 		}, {
@@ -234,14 +234,14 @@
 			"imageName": "glen_15"
 		}],
 		"contactInformation": "Park Website",
-		"specialInformation": "Summer temperatures in Zion's can exceed 100F. Be sure to carry water when hiking, at least 1 gallon per day per person in the summertime.",
+		"specialInformation": "Summer temperatures can exceed 100F. Be sure to carry water when hiking, at least 1 gallon per day per person in the summertime.",
 		"category": "Park",
 		"latitude": 37.522213,
 		"longitude": -110.721532,
 		"charge": "$25.00 per non-commercial vehicle per week. $12.00 per person per week."
 	},{
 		"name": "Monument Valley",
-		"description": "Monument Valley (Navajo: Tsé Biiʼ Ndzisgaii, meaning valley of the rocks) is a region of the Colorado Plateau characterized by a cluster of vast sandstone buttes, the largest reaching 1,000 ft (300 m) above the valley floor. It is located on the Arizona–Utah border (around 36°59′N 110°6′WCoordinates: 36°59′N 110°6′W), near the Four Corners area. The valley lies within the range of the Navajo Nation Reservation and is accessible from U.S. Highway 163. Monument Valley has been featured in many forms of media since the 1930s. Director John Ford used the location for a number of his best-known films, and thus, in the words of critic Keith Phipps, 'its five square miles [13 square kilometers] have defined what decades of moviegoers think of when they imagine the American West.'",
+		"description": "Monument Valley (Navajo: Tsé Biiʼ Ndzisgaii, meaning valley of the rocks) is a region of the Colorado Plateau characterized by a cluster of vast sandstone buttes, the largest reaching 1,000 ft (300 m) above the valley floor. It is located on the Arizona–Utah border, near the Four Corners area. Monument Valley has been featured in many forms of media since the 1930s. Director John Ford used the location for a number of his best-known films, and thus, in the words of critic Keith Phipps, 'its five square miles have defined what decades of moviegoers think of when they imagine the American West.'",
 		"images": [{
 			"imageName": "valley_1"
 		}, {
@@ -274,14 +274,14 @@
 			"imageName": "valley_15"
 		}],
 		"contactInformation": "Park Website",
-		"specialInformation": "Summer temperatures in Monument Valley can exceed 100F. Be sure to carry water when hiking, at least 1 gallon per day per person in the summertime. Monument Valley is a Navajo Tribal park, not a U",
+		"specialInformation": "Summer temperatures in Monument Valley can exceed 100F. Be sure to carry water when hiking, at least 1 gallon per day per person in the summertime. Monument Valley is a Navajo Tribal park.",
 		"category": "Park",
 		"latitude": 37.004245,
 		"longitude": -110.173478,
 		"charge": "$20.00 per car (up to 4 persons per car, $10.00 per additional person) for access to the loop road through the valley."
 	},{
-		"name": "Grand Staircase-Escalante Nat. Monument",
-		"description": "The Grand Staircase-Escalante National Monument is a U.S. National Monument protecting 1,880,461 acres (760,996 ha)[1] of land in southern Utah. There are three main regions: the Grand Staircase, the Kaiparowits Plateau, and the Canyons of the Escalante - all of which are administered by the Bureau of Land Management as part of the National Landscape Conservation System. President Bill Clinton designated the area as a national monument in 1996 using his authority under the Antiquities Act. Grand Staircase-Escalante encompasses the largest land area of all U.S. National Monuments.",
+		"name": "Grand Staircase-Escalante",
+		"description": "The Grand Staircase-Escalante National Monument is a U.S. National Monument protecting 1,880,461 acres of land in southern Utah. There are three main regions: the Grand Staircase, the Kaiparowits Plateau, and the Canyons of the Escalante - all of which are administered by the Bureau of Land Management as part of the National Landscape Conservation System. Grand Staircase-Escalante encompasses the largest land area of all U.S. National Monuments.",
 		"images": [{
 			"imageName": "grand_1"
 		}, {

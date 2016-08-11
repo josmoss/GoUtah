@@ -19,8 +19,6 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // DataStore.sharedInstance.saveDefaults()
-        
        // print(DataStore.sharedInstance.favoriteDestinations.count)
         
     }
@@ -29,25 +27,25 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         return DataStore.sharedInstance.favoriteDestinations.count 
     }
     
-    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        
-        if editingStyle == UITableViewCellEditingStyle.Delete {
-            
-            print("delete tapped")
-            DataStore.sharedInstance.favoriteDestinations.removeAtIndex(indexPath.row)
-            
-            self.tableView.reloadData()
-//            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+//    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+//        return true
+//    }
+//    
+//    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+//        
+//        if editingStyle == UITableViewCellEditingStyle.Delete {
 //            
-//        } else if editingStyle == .Insert {
-            
-        }
-
-    }
+//            print("delete tapped")
+//            DataStore.sharedInstance.favoriteDestinations.removeAtIndex(indexPath.row)
+//            
+//            self.tableView.reloadData()
+////            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+////            
+////        } else if editingStyle == .Insert {
+//            
+//        }
+//
+//    }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         

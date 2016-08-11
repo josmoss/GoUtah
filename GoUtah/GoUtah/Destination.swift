@@ -57,9 +57,7 @@ class Destination: NSObject, NSCoding {
         
         self.name = aDecoder.decodeObjectForKey(kTrackName) as! String
         self.destDescription = aDecoder.decodeObjectForKey(kDestDescription) as! String
-        
         self.imagesArray = aDecoder.decodeObjectForKey(kImagesArray) as! NSArray as! [destImage]
-        
         self.contactInfo = aDecoder.decodeObjectForKey(kContactInfo) as! String
         self.specInfo = aDecoder.decodeObjectForKey(kSpecInfo) as! String
         self.category = aDecoder.decodeObjectForKey(kCategory) as! String
@@ -75,9 +73,7 @@ class Destination: NSObject, NSCoding {
         
         aCoder.encodeObject(self.name, forKey: kTrackName)
         aCoder.encodeObject(self.destDescription, forKey: kDestDescription)
-        
         aCoder.encodeObject(self.imagesArray, forKey: kImagesArray)
-        
         aCoder.encodeObject(contactInfo, forKey: kContactInfo)
         aCoder.encodeObject(specInfo, forKey: kSpecInfo)
         aCoder.encodeObject(category, forKey: kCategory)

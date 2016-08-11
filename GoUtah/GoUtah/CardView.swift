@@ -1,9 +1,8 @@
 //
 // CardView.swift
-//  GoUtah
 //
-//  Created by Joe Moss on 8/5/16.
-//  Copyright © 2016 Touch Tipe LLC. All rights reserved.
+// Attributed to Phillip Wright.
+//
 //
 
 import UIKit
@@ -50,9 +49,9 @@ class CardView: UIView {
         NSLayoutConstraint(item: nameLabel, attribute: .Left, relatedBy: .Equal, toItem: self, attribute: .Left, multiplier: 1, constant: 7).active = true
         NSLayoutConstraint(item: nameLabel, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .Bottom, multiplier: 1, constant: 0).active = true
         
-        nameLabel.font = UIFont(name: "Futura", size: 24)
+        nameLabel.font = UIFont(name: "Futura", size: 20)
         nameLabel.textColor = UIColor.blackColor()
-        nameLabel.textAlignment = .Left
+        nameLabel.textAlignment = .Center
         
         self.layer.cornerRadius = 10
         self.clipsToBounds = true

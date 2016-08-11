@@ -27,8 +27,6 @@ class CardStackViewController: UIViewController, CardStackDelegate {
         print("interested in \(dest.name)")
         
         DataStore.sharedInstance.addFavoriteDestination(dest)
-    //Append interested destinations into favorite destitions array 
-        //DataStore.sharedInstance.favoriteDestinations.append(dest)
         
     }
     
