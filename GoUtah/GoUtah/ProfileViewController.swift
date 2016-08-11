@@ -44,7 +44,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
             self.specInfoLabel.text = destination.specInfo
         
             for imgString in destination.imagesArray {
-              // print(imgString)
+               print(imgString)
         
             if let weather = self.theDestination {
                     
