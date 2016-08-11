@@ -86,32 +86,5 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         return nil
         
     }
-//    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
-//        // Don't want to show a custom image if the annotation is the user's location.
-//        guard !annotation.isKindOfClass(MKUserLocation) else {
-//            return nil
-//        }
-//        
-//        let annotationIdentifier = "AnnotationIdentifier"
-//        
-//        var annotationView: MKAnnotationView?
-//        if let dequeuedAnnotationView = mapView.dequeueReusableAnnotationViewWithIdentifier(annotationIdentifier) {
-//            annotationView = dequeuedAnnotationView
-//            annotationView?.annotation = annotation
-//        }
-//        else {
-//            let av = MKAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
-//            av.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure)
-//            annotationView = av
-//        }
-//        
-//        if let annotationView = annotationView {
-//            // Configure your annotation view here
-//            annotationView.canShowCallout = true
-//            annotationView.image = UIImage(named: "mapPin")
-//            
-//        }
-//        
-//        return annotationView
-//    }
+
 }

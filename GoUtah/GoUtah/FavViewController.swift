@@ -55,6 +55,13 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         
         cell.featureImageView.image = destination.image
         
+        print(self.view.frame.size)
+        print(cell.contentView.frame.size)
+        
+        cell.contentView.frame.size = CGSize(width: 375, height: 185)
+        
+        print(cell.contentView.frame.size)
+       
         cell.nameLabel.text = destination.name
         
         return cell
@@ -73,6 +80,9 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         if segue.identifier == "proSegue" {
             
             if let controller = segue.destinationViewController as? ProfileViewController {
+                
+                // print("Segue perfromed")
+                
                 controller.theDestination = self.currentDestination
                 
             } else {

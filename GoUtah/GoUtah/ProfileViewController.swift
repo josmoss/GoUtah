@@ -15,11 +15,12 @@ protocol WeatherDelegate : class {
 class ProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, WeatherDelegate {
 
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var destDescription: UITextView!
-    @IBOutlet weak var contactInfoLabel: UILabel!
+    @IBOutlet weak var destDescription: UILabel!
     @IBOutlet weak var chargeLabel: UILabel!
     @IBOutlet weak var specInfoLabel: UILabel!
     @IBOutlet weak var tempLabel: UILabel!
+    
+    
     @IBOutlet weak var collectionView: UICollectionView!
 
     var theDestination : Destination?
@@ -31,6 +32,8 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         self.apiController.delegate = self
         
+      //  print(theDestination?.name)
+        
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -39,12 +42,11 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
             
             self.nameLabel.text = destination.name
             self.destDescription.text = destination.destDescription
-            self.contactInfoLabel.text = destination.contactInfo
             self.chargeLabel.text = destination.charge
             self.specInfoLabel.text = destination.specInfo
         
             for imgString in destination.imagesArray {
-               print(imgString)
+              // print(imgString)
         
             if let weather = self.theDestination {
                     
@@ -69,7 +71,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
             
             let temp = Int(theWeather.temperature)
             
-            self.tempLabel.text = "\(temp)"
+            self.tempLabel.text = "\(temp)º"
 
         })
         
@@ -78,6 +80,8 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         let images = theDestination?.imagesArray
+        
+        print(images!.count)
  
         return images!.count
 
@@ -91,7 +95,11 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         let image = images![indexPath.row]
         
+        print(image.imageName)
+        
         cell.imageView.image = UIImage(named: image.imageName)
+      
+        cell.bounds.size = CGSize(width: 200, height: 200)
  
         return cell
     }

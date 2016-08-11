@@ -46,12 +46,17 @@ class CardView: UIView {
         
         //Name
         NSLayoutConstraint(item: nameLabel, attribute: .Top, relatedBy: .Equal, toItem: imageView, attribute: .Bottom, multiplier: 1, constant: 0).active = true
-        NSLayoutConstraint(item: nameLabel, attribute: .Left, relatedBy: .Equal, toItem: self, attribute: .Left, multiplier: 1, constant: 7).active = true
+        
+       // NSLayoutConstraint(item: nameLabel, attribute: .Right, relatedBy: .Equal, toItem: self, attribute: .Right, multiplier: 1, constant: 7).active = true
+        
+        NSLayoutConstraint(item: nameLabel, attribute: .CenterX , relatedBy: .Equal, toItem: self, attribute: .CenterX , multiplier: 1, constant: 0).active = true 
+        
         NSLayoutConstraint(item: nameLabel, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .Bottom, multiplier: 1, constant: 0).active = true
         
+        nameLabel.textAlignment = .Center
         nameLabel.font = UIFont(name: "Futura", size: 20)
         nameLabel.textColor = UIColor.blackColor()
-        nameLabel.textAlignment = .Center
+        
         
         self.layer.cornerRadius = 10
         self.clipsToBounds = true
