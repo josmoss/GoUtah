@@ -27,25 +27,21 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         return DataStore.sharedInstance.favoriteDestinations.count 
     }
     
-//    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-//        return true
-//    }
-//    
-//    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-//        
-//        if editingStyle == UITableViewCellEditingStyle.Delete {
-//            
-//            print("delete tapped")
-//            DataStore.sharedInstance.favoriteDestinations.removeAtIndex(indexPath.row)
-//            
-//            self.tableView.reloadData()
-////            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-////            
-////        } else if editingStyle == .Insert {
-//            
-//        }
-//
-//    }
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            
+            DataStore.sharedInstance.favoriteDestinations.removeAtIndex(indexPath.row)
+            
+            self.tableView.reloadData()
+            
+        }
+
+    }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
@@ -55,14 +51,14 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         
         cell.featureImageView.image = destination.image
         
+        cell.nameLabel.text = destination.name
+        
         print(self.view.frame.size)
         print(cell.contentView.frame.size)
         
         cell.contentView.frame.size = CGSize(width: 375, height: 185)
         
         print(cell.contentView.frame.size)
-       
-        cell.nameLabel.text = destination.name
         
         return cell
     }

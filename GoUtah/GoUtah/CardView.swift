@@ -54,7 +54,7 @@ class CardView: UIView {
         NSLayoutConstraint(item: nameLabel, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .Bottom, multiplier: 1, constant: 0).active = true
         
         nameLabel.textAlignment = .Center
-        nameLabel.font = UIFont(name: "Futura", size: 20)
+        nameLabel.font = UIFont(name: "Avenir", size: 20)
         nameLabel.textColor = UIColor.blackColor()
         
         
