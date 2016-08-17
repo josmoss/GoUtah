@@ -99,7 +99,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="186" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q6B-Af-eEu">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="0.59607843140000005" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="153" id="amF-Ve-jKj" customClass="FavTableViewCell" customModule="GoUtah" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="600" height="153"/>
@@ -311,7 +311,7 @@
                                             <constraint firstItem="zmr-Cz-mEd" firstAttribute="leading" secondItem="vJl-t7-QaN" secondAttribute="leading" constant="8" id="4v1-Wq-sxV"/>
                                             <constraint firstItem="Iki-Fb-Hew" firstAttribute="top" secondItem="zmr-Cz-mEd" secondAttribute="bottom" constant="8" id="57D-b6-6ac"/>
                                             <constraint firstAttribute="trailing" secondItem="aHa-yb-TdC" secondAttribute="trailing" id="5wF-y5-s4e"/>
-                                            <constraint firstItem="hZ8-Mt-Q90" firstAttribute="top" secondItem="aHa-yb-TdC" secondAttribute="bottom" constant="8" id="7h9-ax-LSw"/>
+                                            <constraint firstItem="hZ8-Mt-Q90" firstAttribute="top" secondItem="aHa-yb-TdC" secondAttribute="bottom" constant="26" id="7h9-ax-LSw"/>
                                             <constraint firstItem="Iki-Fb-Hew" firstAttribute="leading" secondItem="vJl-t7-QaN" secondAttribute="leading" constant="8" id="DY4-f2-JP9"/>
                                             <constraint firstItem="hHx-l9-q4u" firstAttribute="top" secondItem="aHa-yb-TdC" secondAttribute="bottom" constant="8" id="DxV-7C-72A"/>
                                             <constraint firstItem="lAU-G7-HaN" firstAttribute="top" secondItem="Iki-Fb-Hew" secondAttribute="bottom" constant="2" id="INC-gG-MX4"/>
