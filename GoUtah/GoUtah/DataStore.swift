@@ -54,10 +54,10 @@ class DataStore: NSObject {
         
         return self.favoriteDestinations.count
     }
-
+    
     func saveDefaults() {
         
-        print("Defaults Saved") 
+        print("Defaults Saved")
         
         let data = NSKeyedArchiver.archivedDataWithRootObject(DataStore.sharedInstance.favoriteDestinations)
         
@@ -69,14 +69,14 @@ class DataStore: NSObject {
     
     func loadDefaults() {
         
-        print("Defaults Loaded") 
+        print("Defaults Loaded")
         
         if let data = NSUserDefaults.standardUserDefaults().objectForKey(kDESTINATIONS) as? NSData {
             
             if let arrayOfDestinations = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [Destination] {
                 
                 self.favoriteDestinations = arrayOfDestinations
-             
+                
             }
             
         } else {
@@ -222,7 +222,7 @@ class DataStore: NSObject {
         //            }
         //
         //        }
-
+        
     }
-
+    
 }

@@ -24,14 +24,14 @@ class CardStackViewController: UIViewController, CardStackDelegate {
     }
     
     func cardInterested(dest: Destination) {
-        print("interested in \(dest.name)")
+//        print("interested in \(dest.name)")
         
         DataStore.sharedInstance.addFavoriteDestination(dest)
         
     }
     
     func cardNotInterested(dest: Destination) {
-        print("not interested in \(dest.name)")
+//        print("not interested in \(dest.name)")
     }
 
 }

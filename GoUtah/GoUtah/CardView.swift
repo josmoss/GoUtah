@@ -10,10 +10,10 @@ import UIKit
 class CardView: UIView {
     var destination : Destination! {
         didSet {
-
+            
             imageView.image = destination.image
             nameLabel.text = destination.name
-
+            
         }
     }
     
@@ -31,7 +31,7 @@ class CardView: UIView {
     }
     
     func defaultInit() {
-        self.backgroundColor = UIColor.whiteColor()
+        self.backgroundColor = UIColor(red: 1.0, green: 0.60, blue: 0.55, alpha: 1.0)
         
         for v in [imageView, nameLabel] {
             v.translatesAutoresizingMaskIntoConstraints = false
@@ -47,9 +47,7 @@ class CardView: UIView {
         //Name
         NSLayoutConstraint(item: nameLabel, attribute: .Top, relatedBy: .Equal, toItem: imageView, attribute: .Bottom, multiplier: 1, constant: 0).active = true
         
-       // NSLayoutConstraint(item: nameLabel, attribute: .Right, relatedBy: .Equal, toItem: self, attribute: .Right, multiplier: 1, constant: 7).active = true
-        
-        NSLayoutConstraint(item: nameLabel, attribute: .CenterX , relatedBy: .Equal, toItem: self, attribute: .CenterX , multiplier: 1, constant: 0).active = true 
+        NSLayoutConstraint(item: nameLabel, attribute: .CenterX , relatedBy: .Equal, toItem: self, attribute: .CenterX , multiplier: 1, constant: 0).active = true
         
         NSLayoutConstraint(item: nameLabel, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .Bottom, multiplier: 1, constant: 0).active = true
         

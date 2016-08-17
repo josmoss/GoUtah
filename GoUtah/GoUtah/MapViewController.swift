@@ -12,7 +12,6 @@ import MapKit
 class MapViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var mapDestView: MKMapView!
-
     
     var theMap: Destination!
     
@@ -21,8 +20,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         let initialLocation = CLLocation(latitude: theMap.latitude, longitude: theMap.longitude)
         
-        print(theMap.latitude)
-        print(theMap.longitude)
+//        print(theMap.latitude)
+//        print(theMap.longitude)
         
         self.addCustomPin(theMap.latitude, long: theMap.longitude, titleString: theMap.name)
         
@@ -30,7 +29,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     }
     
     let regionRadius: CLLocationDistance = 70000
-        
+    
     func centerMapOnLocation(location: CLLocation) {
         
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius * 2.0, regionRadius * 2.0)
@@ -44,9 +43,9 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         let location = CLLocationCoordinate2D(
             latitude: theMap.latitude,
             longitude: theMap.longitude
-            )
+        )
         
-        print("custom pin added")
+//        print("custom pin added")
         
         let customAnnotation = CustomMKPointAnnotation()
         
@@ -59,11 +58,11 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         
-        print("view for annotation called")
+//        print("view for annotation called")
         
         if annotation.isKindOfClass(CustomMKPointAnnotation) {
             
-            print("Got a custom MKPointAnnotation")
+//            print("Got a custom MKPointAnnotation")
             
             let identifier = "MapPin"
             
@@ -86,5 +85,5 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         return nil
         
     }
-
+    
 }

@@ -13,7 +13,7 @@ protocol WeatherDelegate : class {
 }
 
 class ProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, WeatherDelegate {
-
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var destDescription: UILabel!
     @IBOutlet weak var chargeLabel: UILabel!
@@ -22,7 +22,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     
     @IBOutlet weak var collectionView: UICollectionView!
-
+    
     var theDestination : Destination?
     var theWeather : Weather?
     let apiController = WeatherAPIController()
@@ -32,7 +32,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         self.apiController.delegate = self
         
-      //  print(theDestination?.name)
+        //  print(theDestination?.name)
         
     }
     override func viewWillAppear(animated: Bool) {
@@ -44,15 +44,15 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
             self.destDescription.text = destination.destDescription
             self.chargeLabel.text = destination.charge
             self.specInfoLabel.text = destination.specInfo
-        
+            
             for imgString in destination.imagesArray {
-              // print(imgString)
-        
-            if let weather = self.theDestination {
+//                print(imgString)
+                
+                if let weather = self.theDestination {
                     
-                let latlong = "\(weather.latitude)" + "," + "\(weather.longitude)"
-                        
-                        apiController.fetchWeather(latlong)
+                    let latlong = "\(weather.latitude)" + "," + "\(weather.longitude)"
+                    
+                    apiController.fetchWeather(latlong)
                 }
             }
             
@@ -62,8 +62,8 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     func passWeather(theWeather: Weather) {
         //      implement the Weather user interface
         
-//              print(theWeather.icon)
-//              print(theWeather.temperature)
+        //              print(theWeather.icon)
+        //              print(theWeather.temperature)
         
         dispatch_async(dispatch_get_main_queue(), {
             
@@ -72,7 +72,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
             let temp = Int(theWeather.temperature)
             
             self.tempLabel.text = "\(temp)º"
-
+            
         })
         
     }
@@ -81,10 +81,10 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         let images = theDestination?.imagesArray
         
-        print(images!.count)
- 
+//        print(images!.count)
+        
         return images!.count
-
+        
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -95,18 +95,18 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         let image = images![indexPath.row]
         
-        print(image.imageName)
+//        print(image.imageName)
         
         cell.imageView.image = UIImage(named: image.imageName)
-      
+        
         cell.bounds.size = CGSize(width: 200, height: 200)
- 
+        
         return cell
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        print("User tapped on image # \(indexPath.row)")
         
-        self.performSegueWithIdentifier("showImage", sender: self)
     }
     
     @IBAction func buttonTapped(sender: UIButton) {
@@ -128,18 +128,6 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
             
         }
         
-        if segue.identifier == "showImage" {
-            
-            if let controller = segue.destinationViewController as? SelectedImageViewController {
-                
-                controller.theImage = self.theDestination
-                
-            } else {
-                print("Not the correct segue")
-            }
-            
-        }
-        
     }
-
+    
 }

@@ -19,12 +19,12 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       // print(DataStore.sharedInstance.favoriteDestinations.count)
+        // print(DataStore.sharedInstance.favoriteDestinations.count)
         
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataStore.sharedInstance.favoriteDestinations.count 
+        return DataStore.sharedInstance.favoriteDestinations.count
     }
     
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -40,7 +40,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             self.tableView.reloadData()
             
         }
-
+        
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -52,13 +52,14 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         cell.featureImageView.image = destination.image
         
         cell.nameLabel.text = destination.name
+        //        print(cell.nameLabel.text)
         
-        print(self.view.frame.size)
-        print(cell.contentView.frame.size)
+        //        print(self.view.frame.size)
+        //        print(cell.contentView.frame.size)
         
         cell.contentView.frame.size = CGSize(width: 375, height: 185)
         
-        print(cell.contentView.frame.size)
+        //        print(cell.contentView.frame.size)
         
         return cell
     }

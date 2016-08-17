@@ -32,12 +32,12 @@ class Destination: NSObject, NSCoding {
     
     var image : UIImage {
         
-         let image = imagesArray.first
+        let image = imagesArray.first
         
-       //print(image!.imageName)
+        //print(image!.imageName)
         
-       return UIImage(named: image!.imageName)!
-
+        return UIImage(named: image!.imageName)!
+        
     }
     
     override init() {
@@ -82,5 +82,5 @@ class Destination: NSObject, NSCoding {
         aCoder.encodeObject(charge, forKey: kCharge)
         
     }
-
+    
 }

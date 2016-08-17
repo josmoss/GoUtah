@@ -127,7 +127,7 @@ class CardStack : UIView {
         
         UIView.animateWithDuration(0.75, delay: 0, usingSpringWithDamping: 0.65, initialSpringVelocity: 1, options: [], animations: { () -> Void in
             self.setupTransforms(abs(Double(percent)))
-        }, completion: nil)
+            }, completion: nil)
         
         if percent > 0.2 && gesture.state == .Ended {
             
@@ -195,7 +195,7 @@ class CardStack : UIView {
                     card.transform = transform
                     }, completion: nil)
             }
-        
+            
             UIView.animateWithDuration(0.75, delay: 0, usingSpringWithDamping: 0.65, initialSpringVelocity: 1, options: [], animations: { () -> Void in
                 self.setupTransforms(0)
                 }, completion: nil)

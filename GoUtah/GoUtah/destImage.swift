@@ -18,7 +18,6 @@ class destImage: NSObject, NSCoding {
         
         self.imageName = ""
         
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -31,9 +30,7 @@ class destImage: NSObject, NSCoding {
     func encodeWithCoder(aCoder: NSCoder) {
         
         aCoder.encodeObject(self.imageName, forKey: kDestDescription)
-  
         
     }
-
     
 }
